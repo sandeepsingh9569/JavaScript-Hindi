@@ -23,7 +23,7 @@ const JsUser = {
 // console.log(JsUser[mySym])
 
 JsUser.email = "sandeep@chatgpt.com"
-// Object.freeze(JsUser)
+//  Object.freeze(JsUser)
 JsUser.email = "sandeep@microsoft.com"
 // console.log(JsUser);
 
