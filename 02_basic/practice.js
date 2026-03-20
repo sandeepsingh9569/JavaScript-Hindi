@@ -201,13 +201,47 @@
 
 // group Array Items by Property
 
-const user = [
-    {name: "Rajit", city: "Delhi"},
-    {name: "Sandeep", city: "Delhi"},
-    {name: "Kamaljeet", city: "Noida"}
-];
-const grouped = user.reduce((acc, user) => {
-    (acc[user.city]=acc[user.city] || []).push(user);
-    return acc;
-}, {});
-console.log(grouped);
+// const user = [
+//     {name: "Rajit", city: "Delhi"},
+//     {name: "Sandeep", city: "Delhi"},
+//     {name: "Kamaljeet", city: "Noida"}
+// ];
+// const grouped = user.reduce((acc, user) => {
+//     (acc[user.city]=acc[user.city] || []).push(user);
+//     return acc;
+// }, {});
+// console.log(grouped);
+
+// Input - "I love javascript programming"
+
+let str = "I love javascript programming";
+let result = str.split(" ").reduce((longest, current) => {
+    return current.length > longest.length ? current : longest;
+
+})
+console.log(result);
+
+// let words = str.split(" ");
+// let longest = words[0];
+
+// for (let word of words) {
+//     if (word.length > longest.length) {
+//         longest = word;
+
+//     }
+// }
+// console.log(longest);
+
+// let str = "I love javascript programming";
+
+// let words = str.split(" "); // space se split karo
+
+// let longest = words[0];
+
+// for (let word of words) {
+//     if (word.length > longest.length) {
+//         longest = word;
+//     }
+// }
+
+// console.log(longest);
